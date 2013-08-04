@@ -1,6 +1,6 @@
 --http://projecteuler.net/problem=2
 
-function fib_even_gen(n)
+function fib_gen(n)
   return coroutine.wrap(function ()
     local a, b = 1, 2
     while a < n do 
@@ -12,7 +12,7 @@ end
 
 sum = 0
 
-for i in fib_even_gen(4000000) do
+for i in fib_gen(4000000) do
   if (0 == i % 2) then
     sum = sum + i
   end
