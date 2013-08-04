@@ -1,4 +1,6 @@
 projecteuler-lua
 ================
 
-my solution of project Euler
+[projecteuler](http://projecteuler.net/)的解题记录。
+
+![profile](http://projecteuler.net/profile/kurtlau.png)
