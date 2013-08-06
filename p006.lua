@@ -1,6 +1,6 @@
 --http://projecteuler.net/problem=6
 
-function square_diff(n)
+local function square_diff(n)
   return coroutine.wrap(function ()
     local i, j
     for i = 1, n - 1 do
@@ -11,7 +11,8 @@ function square_diff(n)
   end)
 end
 
-sum = 0
+local sum = 0
+local i
 
 for i in square_diff(100) do
   --print(i)

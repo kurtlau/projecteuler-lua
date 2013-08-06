@@ -1,17 +1,17 @@
 --http://projecteuler.net/problem=7
 
---TODO: is_pri sucks
-function is_pri(x)
-  local i
-  for i = 2, x - 1 do
-    if 0 == x % i then
+local function is_pri(x)
+  local i, v
+  
+  for i, v in pairs(a) do
+    if 0 == x % v then
       return false
     end
   end
   return true
 end
 
-local a = {2}
+a = {2}
 local i = 3
 
 while table.getn(a) < 10001 do

@@ -1,6 +1,6 @@
 --http://projecteuler.net/problem=2
 
-function fib_gen(n)
+local function fib_gen(n)
   return coroutine.wrap(function ()
     local a, b = 1, 2
     while a < n do 
@@ -10,7 +10,8 @@ function fib_gen(n)
   end)
 end
 
-sum = 0
+local sum = 0
+local i
 
 for i in fib_gen(4000000) do
   if (0 == i % 2) then
